@@ -1,0 +1,73 @@
+#paralax{
+	background-image: url("../images/parallax-1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: auto;
+	.paralax{
+		height: 500px;
+		position:relative;
+		background-color: rgba(0,0,0,.6);
+		padding-top: 100px;
+		margin:$marginReset;
+		.opacity-top{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 50px;
+			width: 100%;
+			background-color: rgba(255,255,255,.5);
+		}
+		.opacity-bottom{
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			height: 50px;
+			width: 100%;
+			background-color: rgba(255,255,255,.5);
+		}
+		h1{
+			font-weight: bold;
+			color: white;
+			font-size: 50px;
+
+		}
+		.border{
+			width: 40px;
+			border-bottom: 2px solid lighten($secondaryColor, 25%);
+			margin:30px auto;
+		}
+		.slider{
+			.dots{
+					width: 100%;
+					position: absolute;
+					left: 0px;
+					bottom: 50px;
+
+				span{
+					display: inline-block;
+					width: 15px;
+					height: 15px;
+					border-radius: 100%;
+					background-color: rgba(255,255,255, .5);
+					margin:0px 15px;
+					cursor: pointer;
+					transition: all .2s linear;
+					&:hover{
+						background-color: lighten($secondaryColor, 25%);
+					}
+				}
+			}
+			.slide{
+				.manu-item{
+					opacity: .7;
+					transition: all .2s linear;
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+

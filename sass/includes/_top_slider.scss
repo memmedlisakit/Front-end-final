@@ -1,0 +1,80 @@
+#top_slider{
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    .slider{
+        width: 100%;
+        padding: 30px 0px;
+        position: relative;
+        div:first-child{
+            display: block;
+        }
+        .item{
+            background-size: 110% 90%;
+            background-repeat: no-repeat;
+            display: none;
+            height: 450px;
+            img{
+                width: 100%;
+            }
+            h1{
+                font-size: 65px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            h3{
+                font-style: italic;
+                color: grey;
+                margin-top:30px;
+            }
+            @media only screen and (max-width:1200px){               
+                h3{
+                    display: none;
+                }  
+                h1{
+                    margin-top: 100px;
+                    font-size: 40px;
+                }              
+             }
+        }
+        .dots{
+            position: absolute;
+            left: 20px;
+            bottom: 0px;
+            width: 100%;
+            button{
+                width: 80%;
+                margin: 0px auto;
+                padding:15px 0px; 
+                border:none;
+                background-color: lighten($secondaryColor, 25%);
+                text-transform: uppercase;
+                font-weight: bold;
+                color: white;
+                border-radius: 50px;
+                display: block;
+                outline: none;
+                transition: all .2s linear;
+                &:hover{
+                    background-color: $mainDarkColor;
+                }
+            }
+            span{
+                display: inline-block;
+                padding: 6px;
+                background-color: darkgrey;
+                border-radius: 100%;
+                margin-right: 10px;
+                margin-top: 10px;
+                cursor: pointer;
+                transition: all .2s linear;
+                &:hover{
+                    background-color: lighten($secondaryColor, 25%);
+                }
+            }
+            span:nth-of-type(1){
+                margin-left: 30px;
+                background: lighten($secondaryColor, 25%);
+            }
+        }
+    }
+}

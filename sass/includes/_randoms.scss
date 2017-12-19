@@ -1,0 +1,26 @@
+#randoms{
+    padding: 100px 0px;
+    i{
+        font-size: 55px;
+        color: lighten($secondaryColor, 25%);
+    }
+    h1{
+        font-weight: bold;
+        font-size: 40px;
+        span{
+            margin-left: 10px;
+        }
+    }
+    .border{
+        display: inline-block;
+        width: 40px;
+        border-top: 2px solid $mainDarkColor;
+    }
+    p{
+        font-size: 1.3em;
+        margin-top: 10px;
+        opacity: .9;
+        margin-bottom: 30px; 
+    }
+}
+

@@ -1,0 +1,141 @@
+#gallery-head{
+	padding: 50px 0px;
+	background: #f9f9f9;
+	line-height: 100px;
+	h1{
+		font-size: 55px;
+		font-weight: bold;
+
+	}
+	a{
+		color: lighten($secondaryColor, 25%);
+		text-decoration: none;
+		transition: all .2s linear;
+		&:hover{
+			color: grey;
+		}
+	}
+	i{
+		color: grey;
+		font-weight: thin;
+		margin:0px 15px;
+	}
+	span{
+		color: grey;
+	}
+}
+@media only screen and(max-width: 1200px) {
+	#gallery-head{
+		margin-top: 100px;
+	}
+}
+$baseSize:100%/4 - 4;
+#gallery{
+	.head{
+		h1{
+			font-size: 45px;
+			font-weight: bold;
+		}
+		.border{
+			width: 40px;
+		    border-bottom: 2px solid #6fb1ed;
+		    margin: 30px auto;
+		}
+		span{
+			display: inline-block;
+			font-size: 20px;
+			margin:40px 10px;
+			color: lightgrey;
+			border-bottom: 1px solid transparent;
+			transition: all .2s linear;
+			&:hover{
+				color: black;
+				border-bottom: 1px solid $secondaryColor;
+				cursor: pointer;
+			}
+		}
+		span:nth-of-type(1){
+			color: black;
+			border-bottom: 1px solid $secondaryColor;
+		}
+	}
+	.base-contain{
+			.hidden-item{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.50);
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity:0;
+				text-align: center;
+				cursor: pointer;
+				.text{
+					margin-top: 45%;
+					padding: 0px 35px;
+					opacity:0;
+						i{
+							color: white;
+							font-size: 30px;
+							transition: all .2s linear;
+							&:hover{
+								cursor: pointer;
+								color: lighten($secondaryColor, 25%);
+							}
+						}
+						h4{
+							font-weight: bold;
+							color: white;
+							margin:20px 0px;
+							cursor: text;
+						}
+						p{
+							color: white;
+							opacity:.7;
+							cursor: text;
+						}
+				}
+			}
+
+			.small-item{
+				margin:$marginReset;
+				position: relative;
+			}
+			.big-item{
+				margin:$marginReset;
+				position: relative;
+				.text{
+					margin-top: 120%;
+				}
+			}
+	}
+	.popup{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.90);
+		display: none;
+		z-index: 55;
+		.frame{
+			width: 60%;
+			height: 70%;
+			margin:10% auto;
+		}
+		i{
+			display: inline-block;
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: white;
+			font-size: 25px;
+			cursor: pointer;
+			transition: all .2s linear;
+			&:hover{
+				color: lighten($secondaryColor, 25%);
+			}
+		}
+	}	
+}
+

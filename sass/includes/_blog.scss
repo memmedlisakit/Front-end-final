@@ -1,0 +1,67 @@
+#blog{
+	padding:50px 0px;
+	background-color: #f9f9f9; 
+	h1{
+		font-weight: 700;
+	    font-size: 45px;
+	}
+	.border{
+		width: 40px;
+	    border-bottom: 2px solid #6fb1ed;
+	    margin: 30px auto;
+	}
+
+	.item{
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.23);
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		img{
+			width: 100%;
+		}
+		.content{
+			padding: 30px;
+			h4{
+				font-weight:bold;
+				color: lighten($secondaryColor, 25%);
+			}
+			span{
+				color: grey;
+				font-style: italic;
+			}
+			p{
+				margin:20px 0px;
+				opacity:.8;
+				letter-spacing: .20px;
+			}
+			a{
+				text-decoration: none;
+				color: lighten($secondaryColor, 25%);
+				font-style: italic;
+				margin-right: 7px;
+				transition: all .2s linear;
+				&:hover{
+					color:$mainDarkColor;
+				}
+			}
+		}
+	}
+	button{
+		padding: 15px 40px;
+	    text-transform: uppercase;
+	    font-size: 13px;
+	    font-weight: bold;
+	    border: none;
+	    outline: none;
+	    border-radius: 50px;
+	    background-color: #6fb1ed;
+	    color: white;
+	    opacity: .9;
+	    display: block;
+	    margin: 40px auto;
+	    transition: all .2s linear;
+	    &:hover{
+	    	background-color: $mainDarkColor;
+	    }
+	}
+}
